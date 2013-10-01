@@ -1,2 +1,2 @@
-bootsnip
-========
+http://piumosso.github.com/bootsnip/
+====================================

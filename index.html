@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Jade &hearts; Bootstrap</title>
+
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="css/project.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <section class="container">
+        <h1>
+            Jade &hearts; Bootstrap
+            <small>Snippets for bootstrap in jade format</small>
+        </h1>
+
+        <h2>Components</h2>
+
+        <h3>Dropdowns</h3>
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                Regular and disabled links
+                <pre class="snippet">div.dropdown
+    ul.dropdown-menu(role="menu")
+        li(role="presentation")
+            a(href="#", role="menuitem", tabindex="-1") Regular link
+        li.disabled(role="presentation")
+            a(href="#", role="menuitem", tabindex="-1") Disabled link</pre>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                Link, header and divider
+                <pre class="snippet">div.dropdown
+    ul.dropdown-menu(role="menu")
+        li.dropdown-header(role="presentation") Header
+        li(role="presentation")
+            a(href="#", role="menuitem", tabindex="-1") Regular link
+        li.divider(role="presentation")</pre>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(document).on('click', '.snippet', function(){
+                var selection = window.getSelection();
+                var range = document.createRange();
+
+                range.selectNodeContents(this);
+                selection.addRange(range);
+                console.log(range);
+            });
+        });
+    </script>
+</body>
+</html>
+
+
