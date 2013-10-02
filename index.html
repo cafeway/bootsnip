@@ -40,6 +40,81 @@
         li.divider(role="presentation")</pre>
             </div>
         </div>
+
+        <h3>Button groups</h3>
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                Just group
+                <pre class="snippet">div.btn-group
+    button.btn.btn-default(type="button") Left
+    button.btn.btn-default(type="button") Middle
+    button.btn.btn-default(type="button") Right</pre>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                Group with toolbar
+                <pre class="snippet">div.btn-toolbar
+    div.btn-group
+        button.btn.btn-default(type="button") Button</pre>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                Small vertical group
+                <pre class="snippet">div.btn-group-vertical.btn-group-sm
+    button.btn.btn-default(type="button") Left
+    button.btn.btn-default(type="button") Middle
+    button.btn.btn-default(type="button") Right</pre>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                Justified group
+                <pre class="snippet">div.btn-group.btn-group-justified
+    button.btn.btn-default(type="button") Left
+    button.btn.btn-default(type="button") Middle
+    button.btn.btn-default(type="button") Right</pre>
+            </div>
+        </div>
+
+        <h3>Button dropdowns</h3>
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                Let's go
+                <pre class="snippet">div.btn-group
+    button.btn.btn-default.dropdown-toggle(type="button", data-toggle="dropdown")
+        | Action
+        span.caret
+    ul.dropdown-menu(role="menu")
+        li
+            a(href="#") Action
+        li.divider
+        li
+            a(href="#") Another action</pre>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                Split & large button dropdown
+                <pre class="snippet">div.btn-group
+    button.btn.btn-default.btn-lg(type="button") Action
+    button.btn.btn-default.btn-lg.dropdown-toggle(type="button", data-toggle="dropdown")
+        span.caret
+    ul.dropdown-menu(role="menu")
+        li
+            a(href="#") Action
+        li.divider
+        li
+            a(href="#") Another action</pre>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                Dropup
+                <pre class="snippet">div.btn-group.dropup
+    button.btn.btn-default.dropdown-toggle(type="button", data-toggle="dropdown")
+        | Dropup
+        span.caret
+    ul.dropdown-menu(role="menu")
+        li
+            a(href="#") Action</pre>
+            </div>
+        </div>
     </section>
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
