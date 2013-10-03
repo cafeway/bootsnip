@@ -1,2 +1,2 @@
-http://piumosso.github.com/bootsnip/
+http://piumosso.github.io/bootsnip/
 ====================================

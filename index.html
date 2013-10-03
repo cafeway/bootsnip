@@ -21,7 +21,7 @@
 
         <h3>Dropdowns</h3>
         <div class="row">
-            <div class="col-lg-6 col-md-12">
+            <div class="col-md-3 col-sm-6">
                 Regular and disabled links
                 <pre class="snippet">div.dropdown
     ul.dropdown-menu(role="menu")
@@ -30,7 +30,7 @@
         li.disabled(role="presentation")
             a(href="#", role="menuitem", tabindex="-1") Disabled link</pre>
             </div>
-            <div class="col-lg-6 col-md-12">
+            <div class="col-md-3 col-sm-6">
                 Link, header and divider
                 <pre class="snippet">div.dropdown
     ul.dropdown-menu(role="menu")
@@ -43,29 +43,27 @@
 
         <h3>Button groups</h3>
         <div class="row">
-            <div class="col-lg-6 col-md-12">
+            <div class="col-md-3 col-sm-6">
                 Just group
                 <pre class="snippet">div.btn-group
     button.btn.btn-default(type="button") Left
     button.btn.btn-default(type="button") Middle
     button.btn.btn-default(type="button") Right</pre>
             </div>
-            <div class="col-lg-6 col-md-12">
+            <div class="col-md-3 col-sm-6">
                 Group with toolbar
                 <pre class="snippet">div.btn-toolbar
     div.btn-group
         button.btn.btn-default(type="button") Button</pre>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 col-md-12">
+            <div class="col-md-3 col-sm-6">
                 Small vertical group
                 <pre class="snippet">div.btn-group-vertical.btn-group-sm
     button.btn.btn-default(type="button") Left
     button.btn.btn-default(type="button") Middle
     button.btn.btn-default(type="button") Right</pre>
             </div>
-            <div class="col-lg-6 col-md-12">
+            <div class="col-md-3 col-sm-6">
                 Justified group
                 <pre class="snippet">div.btn-group.btn-group-justified
     button.btn.btn-default(type="button") Left
@@ -76,7 +74,7 @@
 
         <h3>Button dropdowns</h3>
         <div class="row">
-            <div class="col-lg-6 col-md-12">
+            <div class="col-md-3 col-sm-6">
                 Let's go
                 <pre class="snippet">div.btn-group
     button.btn.btn-default.dropdown-toggle(type="button", data-toggle="dropdown")
@@ -89,7 +87,7 @@
         li
             a(href="#") Another action</pre>
             </div>
-            <div class="col-lg-6 col-md-12">
+            <div class="col-md-3 col-sm-6">
                 Split & large button dropdown
                 <pre class="snippet">div.btn-group
     button.btn.btn-default.btn-lg(type="button") Action
@@ -102,9 +100,7 @@
         li
             a(href="#") Another action</pre>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 col-md-12">
+            <div class="col-md-3 col-sm-6">
                 Dropup
                 <pre class="snippet">div.btn-group.dropup
     button.btn.btn-default.dropdown-toggle(type="button", data-toggle="dropdown")
@@ -114,7 +110,6 @@
         li
             a(href="#") Action</pre>
             </div>
-        </div>
     </section>
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -124,9 +119,9 @@
                 var selection = window.getSelection();
                 var range = document.createRange();
 
+                $(this).css('height', 'auto');
                 range.selectNodeContents(this);
                 selection.addRange(range);
-                console.log(range);
             });
         });
     </script>
