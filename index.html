@@ -17,6 +17,45 @@
             <small>Snippets for bootstrap in jade format</small>
         </h1>
 
+        <h2>CSS</h2>
+
+        <h3>Forms</h3>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                Vertical full-wide form
+                <pre class="snippet">form(role="form")
+    div.form-group
+        label(for="email") Email address
+        input#email.form-control(type="email", placeholder="Enter email")</pre>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                Inline form
+                <pre class="snippet">form.form-inline(role="form")
+    div.form-group
+        label.sr-only(for="email") Email address
+        input#email.form-control(type="email", placeholder="Enter email")
+    button.btn.btn-default(type="submit) Submit</pre>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                Horizontal form
+                <pre class="snippet">form.form-horizontal(role="form")
+    div.form-group
+        label.col-lg-3.control-label(for="email") Email address
+        div.col-lg-9
+            input#email.form-control(type="email", placeholder="Enter email")
+    div.form-group
+        div.col-lg-offset-3.col-lg-9
+            div.checkbox
+                label
+                    input(type="checkbox")
+                    | Remember me
+    div.form-group
+        div.col-lg-offset-3.col-lg-9
+            button.btn.btn-default(type="submit) Submit</pre>
+            </div>
+        </div>
+
         <h2>Components</h2>
 
         <h3>Dropdowns</h3>
